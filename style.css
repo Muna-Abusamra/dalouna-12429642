@@ -54,7 +54,7 @@ nav a{
 }
 .hero{
     height: 80vh;
-    background-image: url("bg.jpg");
+    background-image: url("./images/bg.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -230,9 +230,16 @@ nav a{
 }
 .hours-card a{
     text-decoration: none;
-    color: #216869;
+    /*color: #216869;*/
 
 }
+.hours-card a[href^="mailto:"] {
+    color: #216869;
+}
+.hours-card a[href^="tel:"] {
+    color: black;
+}
+
 hr{
     border: none;
     border-bottom: 2px dashed #e9e3db;
